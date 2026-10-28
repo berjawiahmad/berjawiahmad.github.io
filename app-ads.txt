@@ -160,3 +160,4 @@ toponad.com, 165535463cfb70, RESELLER, 1d49fe424a1a456d
 xandr.com, 7353, RESELLER
 xandr.com, 17779, RESELLER
 xandr.com, 13799, RESELLER
+bid-matrix.com, f2c71a45ea149366, RESELLER
