@@ -13,3 +13,6 @@ if (grid) {
   copy.append(title,subtitle);tile.append(number,copy,portrait);grid.append(tile);
 }
 const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('#nav-links');toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'✕':'☰'});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰'}));document.querySelector('#year').textContent=new Date().getFullYear();
+
+// Close the mobile menu with Escape, including keyboard navigation.
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.textContent='☰';toggle.focus()}});
